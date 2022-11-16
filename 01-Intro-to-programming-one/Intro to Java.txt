@@ -669,3 +669,37 @@ class LoopScan {
 * <span style="color: gold;font-weight: bolder;">quotient</span> - a result obtained by dividing one quantity by another.
 * <span style="color: gold;font-weight: bolder;">return</span> - a Java keyword used to finish the execution of the method and return data to the caller.
 * <span style="color: gold;font-weight: bolder;">sum</span> - the total amount resulting from the addition of two or more numbers.
+
+## <p style="color: lightblue;font-weight: bolder;">Type Casting Variables</p>
+
+#### <p style="color: lightblue;font-weight: bolder;">Downcasting</p>
+
+<pre>
+
+public class Main{
+
+    public static void main(String args[]){
+        byte a = 6;
+        short b = 7;
+        byte c = (byte) (a + b);
+
+        System.out.println(c);
+    }
+}
+
+</pre>
+
+#### <p style="color: lightblue;font-weight: bolder;">Upcasting</p>
+
+
+
+
+## <p style="color: brown;font-weight: bolder;">Terminology</p>
+
+* <span style="color: gold; font-weight: bolder;">downcast</span> - a process of changing the data type from Object to the particular type, i.e., Integer: Or a datatype from something larger to something smaller.<span style="color: lightgreen; font-weight: bold;">( Reducing the variable datatype based on the value)</span>
+* <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
+* <span style="color: gold; font-weight: bolder;">implicit</span> - a functionality or you can say the feature that provided by the language itself. This is done by the JVM or the tool, not the Programmer.
+* <span style="color: gold; font-weight: bolder;">upcasting</span> - a process of casting subtype to super type - for example from String to Object
+* <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
+* <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
+* <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
