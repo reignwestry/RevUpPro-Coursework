@@ -1,0 +1,71 @@
+# RevUpPro-CourseWork
+
+### Keywords
+* Programming - a series of instructions for a computer to follow.
+* Code - a human-readable instructions that a computer can understand(interpret).
+* Program - a list of commands you would execute, and once those commands are completed, the program is finished.
+* Command - a statement or singular instruction written on its own line.
+
+## Notes
+* A program cannot consist of anything but commands.
+
+## Intro to Programming 6
+* Video: Types of Languages
+  - Every language tries to solve a problem ecountered by an earlier one
+  - Languages evolve from and influence each other like an family tree
+  - Newer languages are not better than older ones - they solve different problems
+  - All computers still use binary at the lowest language levels.
+  - The first engineers used binary.
+  - Engineers used "Assembly languages" to write binary.
+  - Programmers favor languages with more complexity and power.
+  - Compiled Languages have their own syntax and keywords used to write code
+  - Code is compiled into Assembly by machine-specific software
+
+### Keywords
+* Binary - a language of 0's and 1's used by the physical circuits in a computer. 
+  - 1 is a strong electrical signal 
+  - 0 is a weak signal
+  - Bit - a single binary digit.
+  - Byte - is 8 bits.
+
+* Assembly Languages 
+  - simple english commmans that translate into binary commands
+  - Specific to the system the language was designed for.
+  - Different Assemblies have different syntaxes, and support different syntaxes, and support different operations.
+  - Must be translated into binary for a computer to use. 
+  - Are PROCEDURAL - a program is a linear list of programming instructions for the computer to follow. 
+  - Assembly is slow and difficult to program.
+
+* OOP Languages
+  - Addresses the difficulty in representing and maintaining complex data structures
+  - Turns everything into a data structure that contains states and behaviors
+  - A single structure can be copied or "instanced" to represent individuals
+  - Programming becomes writing interactions between objects
+  - Execution is still linear, but not as strictly so
+  - Trades speed and resource usage for more flexibility and maintainability
+
+* Interpreted Languages
+* Executed not by the computer itself, but by another application
+* Scripting code rarely, affects applications outside the host.
+  
+
+### Keywords
+* Scripts - a series of commands for an application
+* Websites make heavy use of scripting languages, interpreted by web browsers
+
+* MarkUp Languages
+  - Used to structure, document, and style static documents
+  - Markup languages provide no active functionality, they are interpreted by other applications or languages
+  - Markup languages are not "programming" languages
+  - Great for describing data and serve as a common format between apps
+
+* Functional Languages
+  - Used to represent and simulate complex mathematical functions and formulae
+  - Not used much to render graphics or write entire applications
+  - Functional languages are very fast, and often handle  complex calculations for other applications
+  - Functional components can scale better than other languages
+    
+
+
+
+
