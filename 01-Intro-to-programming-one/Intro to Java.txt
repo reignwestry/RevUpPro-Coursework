@@ -672,6 +672,81 @@ class LoopScan {
 
 ## <p style="color: lightblue;font-weight: bolder;">Type Casting Variables</p>
 
+* <span style="color: gold;font-weight: bolder;">Casting</span> - the process of converting data of one type to another.
+* <span style="color: gold;font-weight: bolder;">byte</span>, <span style="color: gold;font-weight: bolder;">short</span>, <span style="color: gold;font-weight: bolder;">int</span>, and <span style="color: gold;font-weight: bolder;">long</span> represent whole number values.
+
+<table>
+    <tr>
+        <caption style="color: gold; font-weight: bolder;font-size: 2em">Java's primitive Types</caption>
+    </tr>
+    <tr>
+        <th style="font-weight: bolder;">Categorization</th>
+        <th style="font-weight: bolder;">Name</th>
+        <th style="font-weight: bolder;">Upper Range</th>
+        <th style="font-weight: bolder;">Lower Range</th>
+        <th style="font-weight: bolder;">Bits</th>
+    </tr>
+    <tr style=" background: darkgreen;">
+        <td style="font-weight: bold;">Floating Point</td>
+        <td style="color: black;">double</td>
+        <td style="color: black;">Really huge positive</td>
+        <td style="color: black;">Really Huge negative</td>
+        <td style="color: black;">64</td>
+    </tr>
+    <tr style=" background: green;">
+        <td style="font-weight: bold;"></td>
+        <td style="color: black;"> float</td>
+        <td style="color: black;">Huge positive</td>
+        <td style="color: black;"> Huge negative</td>
+        <td style="color: black;">32</td>
+    </tr>
+    <tr style=" background: brown; border-bottom: none;">
+        <th style="font-weight: bold;">Integral</th>
+        <td>long</td>
+        <td>9,223,372,036,854,775,807</td>
+        <td>-9,223,372,036,854,775,808</td>
+        <td>64</td>
+    </tr>
+    <tr style=" background: brown;">
+        <th style="font-weight: bold;border: none;"></th>
+        <td>int</td>
+        <td>2,147,483,647</td>
+        <td>-2,147,483,648</td>
+        <td>32</td>
+    </tr>
+    <tr style=" background: brown; ">
+        <th style="font-weight: bold; border: none;"></th>
+        <td>char</td>
+        <td>65,535</td>
+        <td>0</td>
+        <td>16</td>
+    </tr>
+    <tr style=" background: brown;">
+        <th style="font-weight: bold; border: none;"></th>
+        <td>short</td>
+        <td>32,767</td>
+        <td>-32,768</td>
+        <td>16</td>
+    </tr>
+    <tr style=" background: brown;">
+        <th style="font-weight: bold; border: none;"></th>
+        <td>byte</td>
+        <td>127</td>
+        <td>-128</td>
+        <td>8</td>
+    </tr>
+    <tr style="background: darkblue;">
+        <th style="font-weight: bold;">Boolean</th>
+        <td>boolean</td>
+        <td>No numeric equivalent</td>
+        <td>true or false</td>
+        <td>1</td>
+    </tr>
+
+
+</table>
+
+
 #### <p style="color: lightblue;font-weight: bolder;">Downcasting</p>
 
 <pre>
@@ -691,15 +766,59 @@ public class Main{
 
 #### <p style="color: lightblue;font-weight: bolder;">Upcasting</p>
 
+<pre>
+
+public class Main{
+    public static void main(String args[]){
+
+    int value = 10;
+    double value2 = 13.5;
+
+    //Upcast to a double
+    double sum = value + value2; //23.5
+    System.out.println(sum);
+
+    //downcast to a int
+    int sum2 = value + <span style="color: gold">(int)</span>value2; //23.5
+    System.out.println(sum2);
+    
+    byte aByte = 20;
+    short aShort = 50;
+
+    //cast the whole sum to a byte
+    byte sum3 = (byte)(aByte + aShort);
+    System.out.println(sum3); //70
+
+    //cast the whole sum to a short
+    short sum4 = (short)(aByte + aShort);
+    System.out.println(sum4);
+
+    }
+}
+
+</pre>
 
 
 
 ## <p style="color: brown;font-weight: bolder;">Terminology</p>
 
-* <span style="color: gold; font-weight: bolder;">downcast</span> - a process of changing the data type from Object to the particular type, i.e., Integer: Or a datatype from something larger to something smaller.<span style="color: lightgreen; font-weight: bold;">( Reducing the variable datatype based on the value)</span>
+* <span style="color: gold; font-weight: bolder;">downcast</span> - a process of changing the data type from Object to the particular type, i.e., Integer: Or a datatype from something larger to something smaller.<span style="color: lightgreen; font-weight: bold;">( Reducing the variable datatype based on the value)</span> - Tell the compiler that datalose is ok.
+* <span style="color: gold; font-weight: bolder;">upcasting</span> - a process of casting subtype to super type - for example from String to Object<span style="color: lightgreen; font-weight: bold;">( Increasing the variable datatype based on the value)</span>
 * <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
 * <span style="color: gold; font-weight: bolder;">implicit</span> - a functionality or you can say the feature that provided by the language itself. This is done by the JVM or the tool, not the Programmer.
-* <span style="color: gold; font-weight: bolder;">upcasting</span> - a process of casting subtype to super type - for example from String to Object
-* <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
-* <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
-* <span style="color: gold; font-weight: bolder;">explicit</span> - functionality done by the programmer not the JVM or language.
+
+
+# <p style="color: lightblue;font-weight: bolder;">Flow Control Logic</p>
+* <span style="color: gold; font-weight: bolder;">Flow Control</span> - the act of determining and manipulating the order in which your program executes written statements through special keywords and statements.
+
+## <p style="color: lightblue;font-weight: bolder;">3 Ways a program can flow and express</p>
+
+1. Sequences
+2. Branches
+3. Loops
+
+* <span style="color: gold;font-weight: bolder;">Sequential / Procedural Flow</span> - A flow that executes statements from top to bottom, left to right, as they appear in your program.
+
+* <span style="color: gold;font-weight: bolder;">Branches / Conditional Flow</span> - A flow that allows different pathways that your code can execute by keywords or conditions.
+
+* <span style="color: gold;font-weight: bolder;">Looping / Repetitive Flow</span> - A flow looping or repeating structures in our programs using various keywords and statements in Java.
